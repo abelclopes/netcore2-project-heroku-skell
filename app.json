@@ -2,7 +2,7 @@
 {
     "name": "netcore2-project-heroku-skell",
     "description": "Netcore 2 project heroku skell",
-    "repository": "https://github.com/jincod/AspNet5DemoApp",
+    "repository": "https://github.com/abelclopes/netcore2-project-heroku-skell",
     "keywords": ["dotnet", "core"],
     "stack": "heroku-16",
     "buildpacks": [
