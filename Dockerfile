@@ -15,7 +15,7 @@ COPY ./SRC/API/API.csproj .
 RUN dotnet restore ./SRC/API/API.csproj
 COPY . .
 WORKDIR /SRC/API/
-RUN dotnet build ./SRC/API/API.csproj -c Release -o /app
+RUN dotnet build API.csproj -c Release -o /app
 
 FROM build AS publish
 RUN dotnet publish ./SRC/API/API.csproj -c Release -o /app
