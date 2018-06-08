@@ -12,7 +12,7 @@ COPY ./SRC/API/API.csproj .
 #RUN apt-get -qq update && apt-get install build-essential -y && apt-get install -my wget gnupg && apt-get -qq -y install bzip2 
 #RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 #RUN apt-get install -y nodejs
-RUN dotnet restore ./SRC/API/API.csproj
+RUN dotnet restore
 COPY . .
 WORKDIR /SRC/API/
 RUN dotnet build API.csproj -c Release -o /app
