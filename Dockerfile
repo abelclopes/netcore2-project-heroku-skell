@@ -3,7 +3,7 @@ WORKDIR /app
 #RUN apt-get -qq update && apt-get install -y build-essential
 #RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 #RUN apt-get install -y nodejs
-RUN npm i -g --unsafe-perm node-sass && npm rebuild --unsafe-perm node-sass -f
+#RUN npm i -g --unsafe-perm node-sass && npm rebuild --unsafe-perm node-sass -f
 EXPOSE 80
 
 FROM microsoft/dotnet:2.1-sdk AS build
