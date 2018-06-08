@@ -24,3 +24,12 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "API.dll"]
+
+
+RUN npm install -g @heroku-cli/plugin-hello-world
+RUN heroku COMMAND
+RUN heroku (-v|--version|version)
+RUN heroku login
+RUN docker build -t netcore2-project-heroku-skell .
+RUN docker build -t netcore2-project-heroku-skell-app .
+RUN docker run -p 5000:80 netcore2-project-heroku-skell-app
