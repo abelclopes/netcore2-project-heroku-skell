@@ -1,7 +1,6 @@
 # netcore2 project heroku skell
 
-[![Build status](https://ci.appveyor.com/api/projects/status/p3iet9wrmg8jxlmx?svg=true)](https://ci.appveyor.com/project/abelclopes/netcore2-project-heroku-skell)
-
+[![Build status](https://ci.appveyor.com/api/projects/status/4jgl48q7cfg2h46m?svg=true)](https://ci.appveyor.com/project/abelclopes/netcore2-project-heroku-skell)
 
 
 
